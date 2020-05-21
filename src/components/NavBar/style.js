@@ -5,7 +5,7 @@ export const StyledNavBar = styled.div`
     top: 0;
     left: 0;
     width: 100%;
-    height: 100px;
+    height: 75px;
     box-shadow: 0 5px 5px rgba(0,0,0,.05);
     display: flex;
     flex-direction: row;
@@ -16,6 +16,7 @@ export const StyledNavBar = styled.div`
 export const StyledMenuList = styled.ul`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    transform: translateX(100px);
 `;
 
 export const StyledMenuItem = styled.li`
@@ -33,8 +34,7 @@ export const StyledContainerIcon = styled.div`
     display: flex;
     flex-direction: row;
     position: relative;
-
-   
+    transform: translateX(-150px);
 `;
 
 export const StyledLogo = styled.div`
