@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import CardProduct from '../../components/CardProduct/CardProduct'
+import CardProduct from '../../components/CardProduct/CardProduct';
+import {StyledDashboard, StyledGridCards} from './style'
 
 export interface DashBoardProps{
   category: string
@@ -10,8 +11,16 @@ const DashBoard: React.FC<DashBoardProps> = ({ category }) => {
 
   return (
     <>
+    <StyledDashboard>
+      <StyledGridCards>
+
+      <CardProduct />
+      <CardProduct />
       <CardProduct />
 
+      </StyledGridCards>
+
+    </StyledDashboard>
     </>
   );
 };
